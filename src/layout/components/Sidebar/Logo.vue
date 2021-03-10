@@ -24,13 +24,13 @@ export default {
   },
   data() {
     return {
-      title: '会员系统',
+      title: '酒店前台系统',
       logo: ''
     }
   },
   methods:{
     toSelect(){
-      window.location.href = 'https://hotel.gxhxinfo.com/hoteltestadmin/abc/'
+      // window.location.href = ''
     }
   }
 }

@@ -75,23 +75,117 @@ export const constantRoutes = [
  */
 
 let list = [
-  // {
-  //   path: '/dashboard',
-  //   component: Layout,
-  //   redirect: '/dashboard',
-  //   meta: {
-  //     title: 'dashboard',
-  //     icon: 'el-icon-odometer'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'dashboard',
-  //       component: () => import('@/views/dashboard/index'),
-  //       name: 'dashboard',
-  //       meta: { title: 'dashboard', icon: 'el-icon-odometer', affix: true }
-  //     }
-  //   ]
-  // },
+  {
+    path: '/agency',
+    component: Layout,
+    redirect: '/agency',
+    meta: {
+      title: 'agency',
+      icon: 'el-icon-odometer'
+    },
+    children: [
+      {
+        path: 'agencyList',
+        component: () => import('@/views/agency/agencyList'),
+        name: 'agencyList',
+        meta: { title: 'agencyList', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'addAgency',
+        component: () => import('@/views/agency/addAgency'),
+        name: 'addAgency',
+        meta: { title: 'addAgency', icon: 'el-icon-odometer', affix: true }
+      },
+    ]
+  },
+  {
+    path: '/member',
+    component: Layout,
+    redirect: '/member',
+    meta: {
+      title: 'member',
+      icon: 'el-icon-odometer'
+    },
+    children: [
+      {
+        path: 'addMember',
+        component: () => import('@/views/member/add-member'),
+        name: 'addMember',
+        meta: { title: 'addMember', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'memberList',
+        component: () => import('@/views/member/member-list'),
+        name: 'memberList',
+        meta: { title: 'memberList', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'memberCard',
+        component: () => import('@/views/member/memberCard'),
+        name: 'memberCard',
+        meta: { title: 'memberCard', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'memberUpgrade',
+        component: () => import('@/views/member/memberUpgrade'),
+        name: 'memberUpgrade',
+        meta: { title: 'memberUpgrade', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'addIntegral',
+        component: () => import('@/views/member/addIntegral'),
+        name: 'addIntegral',
+        meta: { title: 'addIntegral', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'delIntegral',
+        component: () => import('@/views/member/delIntegral'),
+        name: 'delIntegral',
+        meta: { title: 'delIntegral', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'memberRecharge',
+        component: () => import('@/views/member/memberRecharge'),
+        name: 'memberRecharge',
+        meta: { title: 'memberRecharge', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'memberDeductions',
+        component: () => import('@/views/member/memberDeductions'),
+        name: 'memberDeductions',
+        meta: { title: 'memberDeductions', icon: 'el-icon-odometer', affix: true }
+      },
+    ]
+  },
+  {
+    path: '/registration',
+    component: Layout,
+    redirect: '/registration',
+    meta: {
+      title: 'registration',
+      icon: 'el-icon-odometer'
+    },
+    children: [
+      {
+        path: 'oneBilling',
+        component: () => import('@/views/registration/oneBilling'),
+        name: 'oneBilling',
+        meta: { title: 'oneBilling', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'moreBilling',
+        component: () => import('@/views/registration/moreBilling'),
+        name: 'moreBilling',
+        meta: { title: 'moreBilling', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'reservation',
+        component: () => import('@/views/registration/reservation'),
+        name: 'reservation',
+        meta: { title: 'reservation', icon: 'el-icon-odometer', affix: true }
+      },
+    ]
+  },
 ]
 // let data = localStorage.getItem('userInfo')
 // let data1 = []
