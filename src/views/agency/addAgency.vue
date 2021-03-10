@@ -70,7 +70,8 @@
             display: flex;
             justify-content: center;
             button{
-                width: 150px;
+                padding-left: 30px;
+                padding-right: 30px;
             }
         }
     }

@@ -461,7 +461,8 @@
                         margin-right: 20px;
                     }
                     button{
-                        width: 130px;
+                        padding-left: 30px;
+                        padding-right: 30px;
                         margin-left: 20px;
                     }
                 }
@@ -586,7 +587,8 @@
                                 padding-left: 115px;
                                 box-sizing: border-box;
                                 button{
-                                    width: 130px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
                                 }
                             }
                         }
@@ -613,7 +615,8 @@
                                 display: flex;
                                 align-items: center;
                                 button{
-                                    width: 170px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
                                 }
                             }
                         }

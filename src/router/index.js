@@ -184,6 +184,35 @@ let list = [
         name: 'reservation',
         meta: { title: 'reservation', icon: 'el-icon-odometer', affix: true }
       },
+      {
+        path: 'reservationList',
+        component: () => import('@/views/registration/reservationList'),
+        name: 'reservationList',
+        meta: { title: 'reservationList', icon: 'el-icon-odometer', affix: true }
+      },
+    ]
+  },
+  {
+    path: '/guestRoom',
+    component: Layout,
+    redirect: '/guestRoom',
+    meta: {
+      title: 'guestRoom',
+      icon: 'el-icon-odometer'
+    },
+    children: [
+      {
+        path: 'floor',
+        component: () => import('@/views/guestRoom/floor'),
+        name: 'floor',
+        meta: { title: 'floor', icon: 'el-icon-odometer', affix: true }
+      },
+      {
+        path: 'roomType',
+        component: () => import('@/views/guestRoom/roomType'),
+        name: 'roomType',
+        meta: { title: 'roomType', icon: 'el-icon-odometer', affix: true }
+      },
     ]
   },
 ]

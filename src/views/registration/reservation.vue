@@ -238,7 +238,8 @@
                             display: flex;
                             align-items: center;
                             button{
-                                width: 130px;
+                                padding-left: 30px;
+                                padding-right: 30px;
                             }
                         }
                     }
